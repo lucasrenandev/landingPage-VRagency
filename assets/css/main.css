@@ -97,6 +97,24 @@ section {
     font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
+    position: relative;
+}
+.content-box h1::before,
+.content-box h1::after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: auto;
+    background: 
+    url("../img/rounded-star.png")
+    no-repeat center center / cover;
+    aspect-ratio: 1 / 1;
+}
+.content-box h1::before {
+    top: -2rem;
+}
+.content-box h1::after {
+    bottom: -2rem;
 }
 
 .buttons {
@@ -107,7 +125,7 @@ section {
 }
 
 .buttons button {
-    padding: 7px 20px;
+    padding: 8px 23px;
     background-color: transparent;
     color: #fff;
     border: none;
